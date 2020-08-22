@@ -8,8 +8,8 @@ import GFFutils
 import pyBigWig
 import matplotlib.pyplot as plt
 
-G = GFFutils.GFFDB("/home/nawazk/KAUST_Projects/Aiptasia_H3K9ac_methylation_analysis/data/Aiptasia_Genome/annotation-files/dm3.db")
-C_bw = pyBigWig.open("/home/nawazk/KAUST_Projects/Aiptasia_H3K9ac_methylation_analysis/results/H3K9ac/macs14_analysis/Symb_treatedVscontrol_50bin.bw")
+G = GFFutils.GFFDB("/home/user/dm1.db")
+C_bw = pyBigWig.open("/home/user/Symb_treatedVscontrol_50bin.bw")
 Gene_final = []
 def separate_exon_intron(EI_list, EI1, EI2, EI3):
     for idx, ele in enumerate(EI_list):
